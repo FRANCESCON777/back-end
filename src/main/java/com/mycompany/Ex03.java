@@ -7,15 +7,16 @@ public class Ex03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Digite a sua altura em metros (ex: 1.90): ");
+        System.out.print("Digite a sua altura em metros (ex: 1.94): ");
         double altura = scanner.nextDouble();
 
-        System.out.print("Digite o seu peso em quilogramas (ex: 95.5): ");
+        System.out.print("Digite o seu peso em quilogramas (ex: 99.5): ");
         double peso = scanner.nextDouble();
 
         // Calcular o IMC
         double imc = peso / (altura * altura);
 
+        
         System.out.println("Classificação do IMC:");
         if (imc < 16) {
             System.out.println("Magreza grau III");
