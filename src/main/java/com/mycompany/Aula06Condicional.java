@@ -3,33 +3,34 @@ package com.mycompany;
 import java.util.Scanner;
 
 public class Aula06Condicional {
-
     public static void main(String[] args) {
         /**
          * Estrutura condicional simples (if, else)
-         *
+         * 
          * pode ser lida como: SE, SENÃO
-         *
+         * 
          * a condição verdadeira é executada dentro do if
          */
         int num = 3;
 
         // % é o resto da divisão
-        // comparando com 0 significa que o número é par
+        // comparando com 0, significa que o número é par
+
         if (num % 2 == 0) {
             System.out.println(num + " é par !!");
         } else {
-            System.out.println(num + " é impar !!");
+            System.out.println(num + " é ímpar !!");
         }
 
         /**
          * Estrutura condicional composta (if, else if, else)
-         *
+         * 
          * nesse tipo de estrutura podemos ter mais de uma
          * verificação caso o primeiro if não seja satisfeito
-         *
+         * 
          * um exemplo prático pode ser a verificação do IMC
          */
+
         double imc = 24.0;
 
         if (imc < 18.5) {
@@ -40,50 +41,49 @@ public class Aula06Condicional {
             System.out.println("Está com obesidade");
         }
 
-       /*
-       * Estrutura Switch/Case
-       *
-       * É similar ao if/else, com a diferença que ele considera valores predefinidos
-       * que serão observados em cada case (Caso).
-       *
-       * Na sua estrutura ele analisa uma variável, e considera dentre suas opções qual
-       * considera.
-       *
-       * Cada estrutura case deve conter um break, para encerrar a execução.
-       *
-       * O default (padrão) é executado, caso nenhum case tenha sido executado.
-       *
-       * Um exemplo seria uma pergunta de múltipla escolha.
-       */
+        /**
+         * Estrutura Switch/Case
+         * 
+         * É similar ao if/else, com a diferença que ele considera valores predefinidos
+         * que serão observados em cada case (Caso)
+         * 
+         * na sua estrura ele analisa uma variável, e considera dentre suas opções qual
+         * considera.
+         * cada estrutura case deve conter um break, para encerrar a execução.
+         * 
+         * o default (padrão) é executado, caso nenhum case tenha sido executado.
+         * 
+         * um exemplo seria uma pergunta de múltipla escolha.
+         */
 
-      // Digitando textos em mais de uma linha
+        // Digitando textos em mais de uma linha
         System.out.println(
+                "1) Verde, Amarelo e Azul, são cores que fazem parte da bandeira de qual país?\n" + // Separados por +
+                        "\na) Argentina" + // \n é um caracter de scape usado para pular linha.
+                        "\nb) Paraguai" +
+                        "\nc) Brasil" +
+                        "\nd) Alemanha" +
+                        "\n\nDigite uma opção: ");
 
-        "1) Verde, Amarelo e Azul, são cores que fazem parte da bandeira de qual país?\n" +
-               "\\na) Argentina" + // \n é um caracter de escape usado para pular linha.
-               "\\nb) Paraguai" +
-               "\\nc) Brasil" +
-               "\\nd) Alemanha" +
-               "\\n\\nDigite uma opção: ");
+        Scanner scan = new Scanner(System.in);
+        String opcao = scan.nextLine();
 
-      scanner scan = new Scanner(System.in);
-      String opcao = scan.nextLine();
-
-      switch (opcao) {
-          case "a":
-             System.out.println("Resposta incorreta !!");
-        break;
-          case "b":
-             System.out.println("Resposta incorreta !!");
-        break;
-          case "c":
-             System.out.println("Resposta correta !!");
-        break;
-          case "d":
-             System.out.println("Resposta incorreta !!");
-        break;
-    default:
-             System.out.println("Opção inexistente !!");
-        break;
-}
+        switch (opcao) {
+            case "a":
+                System.out.println("Resposta incorreta !!");
+                break;
+            case "b":
+                System.out.println("Resposta incorreta !!");
+                break;
+            case "c":
+                System.out.println("Resposta correta !!");
+                break;
+            case "d":
+                System.out.println("Resposta incorreta !!");
+                break;
+            default:
+                System.out.println("Opção inexistente !!");
+                break;
+        }
+    }
 }
