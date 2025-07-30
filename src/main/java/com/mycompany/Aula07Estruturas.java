@@ -49,5 +49,6 @@ public class Aula07Estruturas {
         };
 
         System.out.println(Arrays.deepToString(matriz2)); // Retorna a representação dos valores
+        
     }
 }
