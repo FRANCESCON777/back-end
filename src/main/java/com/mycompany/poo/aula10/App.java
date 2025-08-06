@@ -19,11 +19,19 @@ public class App {
         pessoa2.nome = "Francescon"
         pessoa2 = "17"
         pessoal2 = "1.93"
-        
+
+        pessoa1.exibirdados();
+        pessoa2.exibirdados();
+
+        pessoa1.atribuirsalario(2000.0);
+        pessoa2.atribuirsalario(3500);
+
         System.out.println("x:\"--- Dados da pessoa ---");
         System.out.println("Nome: " + pessoa1.nome);
         System.out.println("Idade: " + pessoa1.idade);
         System.out.println("Altura (m): " + pessoa1.altura);
+
+
 
         
     }   

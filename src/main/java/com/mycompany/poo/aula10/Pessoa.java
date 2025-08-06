@@ -26,5 +26,23 @@ public class Pessoa {
         System.out.println("Altura (m): " + altura);
 
     } 
+    /*
+     * Nomenclatura de métados
+     * 
+     * Métados/Funções indicam ações, e por padrão utilizamos verbos.
+     * 
+     * Ex: correr, andar, caminhar ...  
+     */
+    public void atribuirsalario (double valor) {
+        this.salario = valor;
+        System.out.println("o novo salario de" + this.nome + " é " + this.salario );
+    }
+    public void atribuir.salirio (double valor, double bonus)
+        this.salario = valor = bonus;
+        System.out.println("o novo salario de"  + "this.salario" + "mais bonus de" + bonus);
+    
+    }
 
-}
+
+    }
+    
