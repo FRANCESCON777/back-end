@@ -2,38 +2,41 @@ package com.mycompany.poo.aula10;
 
 public class App {
     public static void main(String[] args) {
-        pessoa pessoa = new Pessoa();
-        Pessoa.nome = 'João';
-        pessoa.idade = '17';
-        pessoa.salario = 1.000;
-        // Pessoa.salario = 1.000; atributos privado não são visiveis
+        Pessoa pessoa = new Pessoa();
+        pessoa.nome = "Pietro";
+        pessoa.idade = 26;
+        // pessoa.salario = 1.000; atributos privados não são visíveis
 
-        //Instanciado classes que estão declaradas em outros arquivos
-        Pessoa pessoa1 = new Pessoal()
-        Pessoa pessoa2 = new Pessoal
+        // Instanciado classes que estão declaradas em outros arquivos
+        Pessoa pessoa1 = new Pessoa();
+        Pessoa pessoa2 = new Pessoa();
 
-        pessoal1.nome = "joão";
-        pessoal.idade = "17";
-        pessoa1.alura = "1.94"
+        pessoa1.nome = "João";
+        pessoa1.idade = 28;
+        pessoa1.altura = 1.78;
 
-        pessoa2.nome = "Francescon"
-        pessoa2 = "17"
-        pessoal2 = "1.93"
+        pessoa2.nome = "Maria";
+        pessoa2.idade = 38;
+        pessoa2.altura = 1.65;
 
-        pessoa1.exibirdados();
-        pessoa2.exibirdados();
+        pessoa1.exibirDados();
+        pessoa2.exibirDados();
 
-        pessoa1.atribuirsalario(2000.0);
-        pessoa2.atribuirsalario(3500);
+        pessoa1.atribuirSalario(2000.0);
+        pessoa2.atribuirSalario(3500);
 
-        System.out.println("x:\"--- Dados da pessoa ---");
+        /*System.out.println("--- Dados da pessoa ---");
         System.out.println("Nome: " + pessoa1.nome);
         System.out.println("Idade: " + pessoa1.idade);
         System.out.println("Altura (m): " + pessoa1.altura);
 
+        System.out.println("--- Dados da pessoa ---");
+        System.out.println("Nome: " + pessoa2.nome);
+        System.out.println("Idade: " + pessoa2.idade);
+        System.out.println("Altura (m): " + pessoa2.altura);*/
 
+    }
 
-        
-    }   
+}
     
 }
